@@ -14,6 +14,7 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
     background: var(--bg-color-l);
+    color: var(--text-color-l);
 }
 
 section {
@@ -30,6 +31,12 @@ footer {
     color: var(--text-color-d);
 }
 
+button {
+    border: none;
+    outline: none;
+    background-color: var(--bg-color-l);
+}
+
 
 /* К хэдеру */
 
@@ -39,6 +46,21 @@ footer {
 
 .nav-link:hover {
     color: var(--text-color-l);
+}
+
+#search {
+    padding: 10px 0;
+    display: none;
+    transition: 0.5s;
+}
+
+#search input {
+    width: 70%;
+}
+
+#search button {
+    border: none;
+    outline: none;
 }
 
 
@@ -51,10 +73,8 @@ footer {
 
 .description-text {
     position: relative;
-    /* padding: 30px 10px; */
     margin: 50px 10px;
     font-size: 24px;
-    /* border: 1px solid var(--sub-color); */
 }
 
 .description-text::before {
@@ -112,10 +132,11 @@ footer {
 .hall-name {
     margin: 10px 0;
     text-align: center;
+    z-index: 100;
 }
 
 .hall-name span {
-    z-index: 100;
+    z-index: 101;
     position: relative;
 }
 
