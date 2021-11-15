@@ -101,6 +101,10 @@ footer {
     margin-left: auto;
 }
 
+.carousel-indicators {
+    bottom: -20px;
+}
+
 
 /* К залам */
 
